@@ -1289,13 +1289,21 @@ section {
 }
 
 @media (max-width: 600px) {
+    section {
+        padding: 4rem 1rem;
+    }
+
     .hero {
-        padding: 6rem 1.5rem 3rem;
+        padding: 6rem 1rem 3rem;
         min-height: auto;
     }
 
     .hero-content {
         padding-top: 2rem;
+    }
+
+    .project {
+        padding: 1.25rem;
     }
 
     .hero-title {
