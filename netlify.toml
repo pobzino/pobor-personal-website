@@ -16,18 +16,18 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# Cache static assets
+# Cache static assets (short cache for now to allow updates)
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/*.css"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/*.js"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=0, must-revalidate"
