@@ -233,10 +233,16 @@ img {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 8rem 4rem 4rem;
+    padding: 6rem 1rem 3rem;
     position: relative;
     overflow: hidden;
     background: #000000;
+}
+
+@media (min-width: 601px) {
+    .hero {
+        padding: 8rem 4rem 4rem;
+    }
 }
 
 /* Background accent glow - only on right side, not affecting black */
@@ -253,9 +259,16 @@ img {
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 100%;
+    width: 100%;
     z-index: 2;
     position: relative;
+}
+
+@media (min-width: 601px) {
+    .hero-content {
+        max-width: 700px;
+    }
 }
 
 .hero-label {
@@ -504,7 +517,13 @@ img {
    SECTION COMMON STYLES
    ======================================== */
 section {
-    padding: 8rem 4rem;
+    padding: 4rem 1rem;
+}
+
+@media (min-width: 601px) {
+    section {
+        padding: 8rem 4rem;
+    }
 }
 
 .section-header {
@@ -764,8 +783,14 @@ section {
 }
 
 .contact-content {
-    max-width: 700px;
+    max-width: 100%;
     position: relative;
+}
+
+@media (min-width: 601px) {
+    .contact-content {
+        max-width: 700px;
+    }
 }
 
 .contact-title {
