@@ -1303,22 +1303,34 @@ section {
 
 @media (max-width: 600px) {
     section {
-        padding: 4rem 1rem;
+        padding: 3rem 1rem !important;
     }
 
     .hero {
-        padding: 6rem 1rem 3rem;
+        padding: 5rem 1rem 2rem !important;
         min-height: auto;
     }
 
     .hero-content {
-        padding-top: 2rem;
-        max-width: 100%;
+        padding-top: 1rem;
+        max-width: 100% !important;
+        width: 100%;
     }
 
-    .about-content,
-    .about-text,
+    .about-content {
+        max-width: 100% !important;
+        gap: 2rem;
+    }
+
+    .about-text {
+        max-width: 100% !important;
+    }
+
     .contact-content {
+        max-width: 100% !important;
+    }
+
+    .experience-strip {
         max-width: 100%;
     }
 
@@ -1327,7 +1339,7 @@ section {
     }
 
     .hero-title {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
 
     .hero-subtitle {
