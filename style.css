@@ -783,23 +783,6 @@ section {
     margin-bottom: 2rem;
 }
 
-/* TidyCal Embed */
-.tidycal-wrapper {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    border-radius: 12px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border);
-}
-
-/* TidyCal Dark Theme Override */
-.tidycal-wrapper iframe {
-    border-radius: 12px;
-    filter: invert(0.88) hue-rotate(180deg);
-}
-
 .contact-email {
     display: inline-block;
     font-family: var(--font-heading);
