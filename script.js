@@ -252,28 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========================================
     // PROJECT HOVER EFFECTS
     // ========================================
-    const projects = document.querySelectorAll('.project');
-
-    projects.forEach(project => {
-        const image = project.querySelector('.project-image-inner');
-
-        project.addEventListener('mousemove', (e) => {
-            if (window.innerWidth < 900) return;
-
-            const rect = project.getBoundingClientRect();
-            const x = (e.clientX - rect.left) / rect.width;
-            const y = (e.clientY - rect.top) / rect.height;
-
-            const moveX = (x - 0.5) * 20;
-            const moveY = (y - 0.5) * 20;
-
-            image.style.transform = `scale(1.05) translate(${moveX}px, ${moveY}px)`;
-        });
-
-        project.addEventListener('mouseleave', () => {
-            image.style.transform = 'scale(1) translate(0, 0)';
-        });
-    });
+    // Note: Project image hover effects removed as layout changed to card-based design
 
     // ========================================
     // MAGNETIC BUTTONS
