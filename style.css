@@ -706,12 +706,13 @@ section {
 .exp-number {
     display: block;
     font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 4vw, 3.5rem);
     font-weight: 600;
     background: linear-gradient(135deg, var(--text), var(--text-muted));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    white-space: nowrap;
 }
 
 .exp-label {
