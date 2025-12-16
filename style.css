@@ -1300,6 +1300,13 @@ section {
 
     .hero-content {
         padding-top: 2rem;
+        max-width: 100%;
+    }
+
+    .about-content,
+    .about-text,
+    .contact-content {
+        max-width: 100%;
     }
 
     .project {
