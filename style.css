@@ -691,11 +691,11 @@ section {
 /* Experience Strip */
 .experience-strip {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     padding-top: 4rem;
     border-top: 1px solid var(--border);
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
