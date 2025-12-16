@@ -740,12 +740,25 @@ section {
     border: 1px solid var(--border);
     border-radius: 20px;
     transition: all 0.4s var(--ease-out-expo);
+    opacity: 0;
+    transform: translateY(30px);
 }
+
+.project.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project:nth-child(1) { transition-delay: 0.1s; }
+.project:nth-child(2) { transition-delay: 0.2s; }
+.project:nth-child(3) { transition-delay: 0.3s; }
+.project:nth-child(4) { transition-delay: 0.4s; }
 
 .project:hover {
     background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.15);
     transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(163, 163, 163, 0.05);
 }
 
 .project-info {

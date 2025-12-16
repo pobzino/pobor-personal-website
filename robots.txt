@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://pobor.com/sitemap.xml
+Sitemap: https://pobors.com/sitemap.xml
